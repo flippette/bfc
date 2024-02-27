@@ -1,0 +1,15 @@
+[package]
+name = "bfi"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "a brainfuck interpreter"
+
+[dependencies]
+bfc-parser.workspace = true
+crossterm.workspace = true
+
+[lints]
+workspace = true

@@ -1,0 +1,23 @@
+[workspace]
+resolver = "2"
+members = [
+    "bfc-lexer",
+    "bfc-parser",
+    "bfi",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["flippette <quangdatle2006@outlook.com>"]
+license = "Unlicense"
+repository = "https://github.com/flippette/bfc"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.dependencies]
+bfc-lexer.path = "./bfc-lexer"
+bfc-parser.path = "./bfc-parser"
+crossterm = "0.27.0"
+nom = "7.1.3"
